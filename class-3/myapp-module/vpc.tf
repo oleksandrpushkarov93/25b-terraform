@@ -1,0 +1,19 @@
+resource "aws_vpc" "main" {
+  cidr_block = var.cidr_block
+
+  tags = {
+    Name = "${var.name}-vpc"
+    env  = var.env
+  }
+}
+
+resource "aws_subnet" "main" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = var.subnet_cidr
+  availability_zone = var.az
+
+  tags = {
+    Name = "${var.name}-subnet"
+    env  = var.env
+  }
+}
