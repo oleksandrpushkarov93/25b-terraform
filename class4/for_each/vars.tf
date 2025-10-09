@@ -1,3 +1,3 @@
-variable users {
-  type        = list
+variable "users" {
+  type = list(any)
 }

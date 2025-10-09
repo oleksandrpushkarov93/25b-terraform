@@ -9,14 +9,14 @@ module "dev" {
   az            = "us-east-1c"
 }
 
-output vpc_id {
+output "vpc_id" {
   value = module.dev.vpc_id
 }
 
-output subnet_id {
+output "subnet_id" {
   value = module.dev.subnet_id
 }
 
-output private_ip  {
+output "private_ip" {
   value = module.dev.ec2_private_ip
 }

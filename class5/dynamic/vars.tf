@@ -1,3 +1,3 @@
-variable "users" {
+variable "ports" {
   type = list(any)
 }

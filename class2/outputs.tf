@@ -1,15 +1,15 @@
-output vpc {
+output "vpc" {
   value = aws_vpc.dev.id
 }
 
-output vpc_arn {
+output "vpc_arn" {
   value = aws_vpc.dev.arn
 }
 
-output subnet {
+output "subnet" {
   value = aws_subnet.dev.id
 }
 
-output subnet_arn {
+output "subnet_arn" {
   value = aws_subnet.dev.arn
 }

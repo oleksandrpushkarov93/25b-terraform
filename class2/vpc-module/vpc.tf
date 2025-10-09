@@ -1,9 +1,9 @@
 resource "aws_vpc" "main" {
-  cidr_block       = var.cidr_block
+  cidr_block = var.cidr_block
 
   tags = {
     Name = "25b-vpc"
-    env = var.env
+    env  = var.env
   }
 }
 
@@ -13,6 +13,6 @@ resource "aws_subnet" "main" {
 
   tags = {
     Name = "subnet-1"
-    env = var.env
+    env  = var.env
   }
 }

@@ -1,11 +1,11 @@
-variable cidr_block {
-  type        = string
+variable "cidr_block" {
+  type = string
 }
 
-variable subnet_cidr {
-  type        = string
+variable "subnet_cidr" {
+  type = string
 }
 
-variable env {
-  type        = string
+variable "env" {
+  type = string
 }
