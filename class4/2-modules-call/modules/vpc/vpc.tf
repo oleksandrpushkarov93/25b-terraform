@@ -53,7 +53,7 @@ resource "aws_nat_gateway" "default" {
 }
 
 resource "aws_eip" "default" {
-  domain   = "vpc"
+  domain = "vpc"
 
   tags = {
     Name = "${var.name}-eip"
